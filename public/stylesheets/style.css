@@ -1,0 +1,182 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family: "Gilroy";
+}
+html,
+body
+{
+width: 100%;
+height: 100%;
+}
+
+#main
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+#left
+{
+  width: 20vw;
+  height: 100%;
+  background-color: #4eae67b2;
+  position: relative;
+  padding-left: 6px;
+  opacity: .9;
+}
+#left h3{
+  padding-top: 6px;
+  margin-left: 4px;
+}
+
+#right
+{
+  width: 80vw;
+  height: 100%;
+  background-color:#e3dadaa6;
+  opacity: .2;
+  position: relative;
+}
+#right small{
+  color: black;
+}
+#line{
+  border-radius: 4px;
+  background-color: #07070a;
+}
+
+#lnav{
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#lnav #icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap : 20px;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+a i{
+  color : white;
+  text-decoration: none;
+  border-color: white;
+}
+a{
+  color : white;
+  text-decoration: none;
+}
+#files{
+  /* position:relative; */
+
+  display: flex;
+  top: 4%;
+  background-color: rgb(109, 162, 101);
+  color: white;
+  gap: 3px;
+  align-items: center;
+  font-size: 10px;
+  padding: 12px 22px;
+  border-radius: 4px;
+  margin-top: 5px;
+  
+  
+}
+
+input{
+width: calc(100% - 50px);
+padding: 7px;
+font-size: 10px;
+margin-left: 30px;
+margin-bottom: 10px;
+}
+
+#fileForm{
+  display: none;
+}
+#folderForm
+{
+  display: none;
+}
+
+#filename{
+  width: 90%;
+  height: 93%;
+  position: relative;
+  top: 10%;
+}
+#files i{
+  font-size: 20px;
+  cursor: pointer;
+}
+#edit{
+  position: absolute;
+  right: 13%;
+  font-size: 20px;
+  color: white;
+  display : none;
+}
+small{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 20px;
+  opacity: .6;
+}
+#files:hover #edit{
+display: initial;
+}
+#top-nav{
+  position: absolute;
+  width: 100%;
+  background-color : #07070a;
+  height : 5%;
+}
+
+#opened{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 100%;
+  background-color: #373741;
+}
+#opened h1{
+  font-size: 20px;
+  color : white;
+  padding-left: 15px;
+}
+#opened i{
+  font-size : 15px;
+  color : white;
+}
+
+textarea{
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  bottom: 0%;
+  color: black;
+  padding: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "consola";
+  font-size: 20px;
+}
